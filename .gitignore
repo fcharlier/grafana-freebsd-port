@@ -1,0 +1,6 @@
+.DS_Store
+*.tar.gz
+*.shar
+public
+__pycache__
+
