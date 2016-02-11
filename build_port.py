@@ -37,7 +37,7 @@ static_tarball = 'grafana-static-{}.tar.gz'.format(VERSION)
 chdir(grafana_repo)
 subprocess.run(['npm', 'install']) 
 subprocess.run(['npm', 'install', '-g', 'grunt-cli']) 
-subprocess.run(['grunt']) 
+subprocess.run(['grunt', 'release'])
 chdir(home)
 shutil.move(join(grafana_repo, 'public_gen'), join(home,'public'))
 if exists(static_tarball):
